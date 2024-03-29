@@ -1,0 +1,13 @@
+studentName 
+email
+pass
+city
+state
+
+object 
+student{
+
+}
+
+JSON object
+java script object notation
