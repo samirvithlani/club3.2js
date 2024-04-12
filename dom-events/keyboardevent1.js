@@ -16,3 +16,5 @@ function getData(){
         txterr.innerHTML = "";
     }
 }
+
+// const data =()=>{}
