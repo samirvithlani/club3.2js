@@ -19,3 +19,7 @@ java script object notation
 2)name
 3)class
 4)tags
+
+
+///form ---> submit --> action
+// action -->url
