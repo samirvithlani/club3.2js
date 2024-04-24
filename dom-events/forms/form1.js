@@ -31,4 +31,14 @@ const submitHandler =(event)=>{
     isSubmmited.innerHTML = "Form Submitted"
 
 
+
+    var nameoutput = document.getElementById("nameoutput")
+    nameoutput.style.color = color.value
+    nameoutput.innerHTML = name.value
+
+    var ageoutput = document.getElementById("ageoutput")
+    ageoutput.style.color = color.value
+    ageoutput.innerHTML = age.value
+
+
 }
