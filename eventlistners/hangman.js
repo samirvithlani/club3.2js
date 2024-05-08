@@ -16,6 +16,16 @@ submit.addEventListener('click', () => {
     var answer = document.getElementById('answer').value
     console.log(answer)
     //match answer...
+    //question...
+    //console.log(question)
+    //match...
+    var ques = data.find((q)=>q.question==question)
+    if(ques.answer===answer){
+        alert('You are right')
+    }
+    else{
+        alert('You are wrong')
+    }
 })
 
 
