@@ -5,6 +5,7 @@ var users = [
     email: "rahul@gmail.com",
     age: 21,
     marks: 70,
+    imageUrl :"../images/images.jpg"
   },
   {
     id: 1002,
@@ -52,6 +53,13 @@ const showTable = () => {
     }
     marksTD.innerHTML = users[i].marks;
 
+
+    const imageTd = document.createElement("td");
+    const image = document.createElement("img");
+    image.src = users[i].imageUrl;
+    image.style.width = "50px";
+    image.style.height = "50px";
+    imageTd.appendChild(image);
     
 
     tr.appendChild(idTD);
@@ -60,6 +68,7 @@ const showTable = () => {
     tr.appendChild(emailTD);
 
     tr.appendChild(marksTD);
+    tr.appendChild(imageTd);
 
     tbody.appendChild(tr);
   }
