@@ -11,9 +11,14 @@ const removeElm =()=>{
 
 const removeElm2 =()=>{
 
-        var ptag = document.getElementsByTagName("p");
-        console.log(ptag);
-        ptag[0].remove();
+        // var myDiv = document.getElementById("mydiv");
+        // var ptag = myDiv.getElementsByTagName("p");
+        // console.log(ptag);
+        // ptag[0].remove();
+
+
+        var myDiv = document.getElementById("mydiv");
+        console.log(myDiv.lastElementChild);
 
 
 }

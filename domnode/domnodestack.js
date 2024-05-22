@@ -21,8 +21,11 @@ removeButton.addEventListener('click', function() {
     const lastChild = box.lastElementChild; 
     console.log(lastChild);
     if (lastChild) {
+        console.log(lastChild.textContent);
         const removedValue = parseInt(lastChild.textContent); 
+        console.log("removed value...",removedValue);
         data.push(removedValue); 
+        console.log("data...",data);
         box.removeChild(lastChild); 
     }
     else{
