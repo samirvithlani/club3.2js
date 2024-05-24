@@ -24,3 +24,19 @@ java script object notation
 ///form ---> submit --> action
 // action -->url
 
+
+sync
+non syncronized....
+
+************************************************* : --> file ,databse .,api,,,,, 2 sec
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*:
+_undefined_
+
+
+***************************************** -->
+line print
+
+
+
+Promise is class...
+
