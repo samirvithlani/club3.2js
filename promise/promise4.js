@@ -42,7 +42,7 @@ const generateQuestions = (examData)=>{
                     }
                 ]
             })
-        },4000)
+        },1000)
     })
 }
 
