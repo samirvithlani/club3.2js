@@ -28,6 +28,7 @@ const printreceipt = async () => {
   const recp = await receipt();
 
   console.log(recp);
+  console.log("receipt end..");
 };
 
 printreceipt();
