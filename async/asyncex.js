@@ -25,7 +25,7 @@ const fetchUsers = () =>{
 
         setTimeout(() => {
             resolve(users);
-        }, 3000);
+        }, 300);
     })
 
 
@@ -43,7 +43,27 @@ const printUsers = async () =>{
     const searchbox = document.getElementById("searchtag");
     const searchInput = document.createElement("input");
     searchInput.setAttribute("type","text");
+    searchInput.setAttribute("id","searching")
     searchbox.appendChild(searchInput);
+    //a
+
+    searchInput.addEventListener("keyup",()=>{
+        //const searchValue = e.target.value;
+        const searchValue = document.getElementById("searching").value;
+        searchValue.toLowerCase();
+        const filteredUsers = allUsers.filter((user)=>{
+            return user.name.toLowerCase().includes(searchValue);
+        })
+        console.log(filteredUsers);
+        main.innerHTML = "";
+        for(let i =0;i<filteredUsers.length;i++){
+            const p = document.createElement("p");
+            p.innerHTML = filteredUsers[i].id + " "+filteredUsers[i].name;
+            main.appendChild(p);
+        }
+        
+
+    })
 
 
 
