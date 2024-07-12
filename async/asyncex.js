@@ -39,6 +39,14 @@ const printUsers = async () =>{
     loader.innerHTML = "Loading....";
     const allUsers = await fetchUsers();
     loader.innerHTML = "";
+
+    const searchbox = document.getElementById("searchtag");
+    const searchInput = document.createElement("input");
+    searchInput.setAttribute("type","text");
+    searchbox.appendChild(searchInput);
+
+
+
     for(let i =0;i<allUsers.length;i++){
         const p = document.createElement("p");
         p.innerHTML = allUsers[i].id + " "+allUsers[i].name;
